@@ -176,7 +176,7 @@ const Registration = () => {
             onMouseEnter={() => playSoundHover()}
           >
             I have read the{" "}
-            <a href="" className="registrAgrrLink">
+            <a href="#" className="registrAgrrLink">
               agreement
             </a>
           </Checkbox>

@@ -55,7 +55,7 @@ const Registration = () => {
 
   const onSubmit = async (values) => {
     const data = await dispatch(fetchRegistration(values));
-    console.log(data);
+    console.log(data, "wqeqweqeq");
     if (!data.payload) {
       alert("Failed to registration");
     }

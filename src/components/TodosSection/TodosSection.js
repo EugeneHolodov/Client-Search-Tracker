@@ -14,7 +14,7 @@ import { useParams, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./TodosSection.module.css";
-import { fetchUpdateTodos, setUpdateTodo } from "../../redux/slices/cards";
+import { fetchUpdateTodos } from "../../redux/slices/cards";
 import { useSound } from "../utils/useSound";
 
 function TodosSection({ cardId, cardData }) {

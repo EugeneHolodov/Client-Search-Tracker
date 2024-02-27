@@ -23,8 +23,8 @@ function TodosSection({ cardId, cardData }) {
   const { id } = useParams();
   const dispatch = useDispatch();
   const [form] = Form.useForm();
-  const playSoundClick = useSound("/audio/click-sound.mp3", 0.4);
-  const playSoundWarning = useSound("/audio/scout-message.wav", 0.3);
+  const playSoundClick = useSound("/audio/click-sound.mp3", 0.05);
+  const playSoundWarning = useSound("/audio/scout-message.wav", 0.05);
 
   useEffect(() => {
     const handleUnload = async () => {

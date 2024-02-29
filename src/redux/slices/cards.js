@@ -123,7 +123,15 @@ const cardsSlice = createSlice({
     },
     //updete todos by id
 
-    [fetchUpdateTodos.fulfilled]: (state) => {
+    [fetchUpdateTodos.fulfilled]: (state, action) => {
+      const updatedCard = action.payload;
+      const index = state.cards.items.findIndex(
+        (card) => card._id === updatedCard._id
+      );
+
+      if (index !== -1) {
+        state.cards.items[index].todos = updatedCard.todos;
+      }
       state.cards.status = "loaded";
     },
     [fetchUpdateTodos.rejected]: (state) => {

@@ -93,14 +93,15 @@
 .ulList {
   list-style: none;
   max-height: 200px;
-  overflow: auto; 
+  overflow: auto;
   padding: 5px 0;
 }
 
 .tabDeadl {
+  align-items: flex-start;
   display: flex;
   max-height: 200px;
-  overflow: auto; 
+  overflow: auto;
   gap: 5px;
   padding: 5px 0;
 }

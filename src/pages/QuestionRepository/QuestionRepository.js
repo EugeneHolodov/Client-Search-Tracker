@@ -170,13 +170,19 @@ const QuestionRepository = () => {
           }}
         >
           <div className={styles.conteinForForm}>
-            <div>
+            <div
+            style={{
+              maxWidth: "500px",
+            }}>
               <h2 className={styles.todoHeader}>Create a New Question</h2>
               <Form.Item name="question">
                 <SimpleMDE value={valueQuest} onChange={onChangeQuest} />
               </Form.Item>
             </div>
-            <div>
+            <div
+            style={{
+              maxWidth: "500px",
+            }}>
               <h2 className={styles.todoHeader}>Add An Answer</h2>
               <Form.Item name="answer">
                 <SimpleMDE value={valueAnsw} onChange={onChangeAnsw} />

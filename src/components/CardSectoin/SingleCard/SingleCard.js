@@ -50,7 +50,8 @@ const SingleCard = ({ item, hoverFunc }) => {
     setStatusColor(stateIndicatorColor);
   }, [item.state, stateIndicatorColor]);
 
-  const todoList = item.todos[0].items.length ? (
+
+  const todoList = item.todos[1] && item.todos[0].items.length ? (
     <ul className={styles.ulList}>
       {item.todos.map((column, index) => {
         if (index === 0) {

@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import {
   DeleteOutlined,
@@ -226,6 +226,7 @@ function TodosSection({ cardId, cardData }) {
       </Droppable>
     );
   }
+
 
   return (
     <div className={styles.section}>

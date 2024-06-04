@@ -118,7 +118,7 @@ const cardsSlice = createSlice({
       }
       state.cards.status = "loaded";
     },
-    [fetchUpdateCards.rejected]: (state, action) => {
+    [fetchUpdateCards.rejected]: (state) => {
       state.cards.status = "error";
     },
     //updete todos by id
